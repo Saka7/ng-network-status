@@ -1,12 +1,12 @@
-![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/logo.png)
+![ng-network-health](https://raw.githubusercontent.com/Saka7/ng-network-health/master/logo.png)
 
 # NG-NETWORK-HEALTH
-[![npm version](https://badge.fury.io/js/ng-network-health.svg)](https://badge.fury.io/js/ng-network-health)
 [![Code Climate](https://codeclimate.com/github/Saka7/ng-network-health/badges/gpa.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 [![Issue Count](https://codeclimate.com/github/Saka7/ng-network-health/badges/issue_count.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 
 
 [![NPM](https://nodei.co/npm/ng-network-health.png)](https://nodei.co/npm/ng-network-health/)
+[![NPM](https://nodei.co/npm-dl/ng-network-health.png?months=6)](https://nodei.co/npm/ng-network-health/)
 
 
 **ng-network-health** will help you to add events when app is going on-line/off-line.
@@ -86,7 +86,11 @@ public healthCheck(interval: number, options: Options);
 
 You can configure interval and grayscale effect options.
 ```javascript
-this.networkHealthService.healthCheck(500, { grayscale: { enabled: false } });
+this.networkHealthService.healthCheck(500, {
+  grayscale: {
+    enabled: false
+  }
+});
 ```
 
 ### Default option values
