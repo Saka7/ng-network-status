@@ -1,6 +1,6 @@
 {
   "name": "ng-network-status",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Angular network status checking module for offline-first apps",
   "main": "./bundles/ng-network-status.umd.js",
   "module": "./modules/ng-network-status.es5.js",
