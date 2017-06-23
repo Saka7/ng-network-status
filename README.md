@@ -1,9 +1,13 @@
+![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/logo.png)
+
 # NG-NETWORK-HEALTH
+[![npm version](https://badge.fury.io/js/ng-network-health.svg)](https://badge.fury.io/js/ng-network-health)
 [![Code Climate](https://codeclimate.com/github/Saka7/ng-network-health/badges/gpa.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 [![Issue Count](https://codeclimate.com/github/Saka7/ng-network-health/badges/issue_count.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 
 
-![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/logo.png)
+[![NPM](https://nodei.co/npm/ng-network-health.png)](https://nodei.co/npm/ng-network-health/)
+
 
 **ng-network-health** will help you to add events when app is going on-line/off-line.
 
@@ -20,7 +24,7 @@
 `npm install --save ng-network-health`
 
 ### Add NgNetworkHealthModule to your AppModule
-```typescript
+```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -43,7 +47,7 @@ export class AppModule { }
 ```
 
 ### Use NetworkHealthService in your components
-```typescript
+```javascript
 import { Component, OnInit } from '@angular/core';
 
 // Import NetworkHealthService
@@ -76,18 +80,18 @@ export class AppComponent implements OnInit {
 
 ### Available options
 `healthCheck` method signature
-```typescript
+```javascript
 public healthCheck(interval: number, options: Options);
 ```
 
 You can configure interval and grayscale effect options.
-```typescript
+```javascript
 this.networkHealthService.healthCheck(500, { grayscale: { enabled: false } });
 ```
 
 ### Default option values
 Default interval is `1000ms` and default options is
-```typescript
+```javascript
 defaultOptions = {
   grayscale: {
     enabled: true,
