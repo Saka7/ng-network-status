@@ -8,7 +8,7 @@
 
 ## Examples
 
-![ng-network-health](https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif)
+![ng-network-health](https://j.gifs.com/Wn3ln4.gif)
 
 ## Usage
 
