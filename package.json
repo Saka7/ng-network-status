@@ -1,6 +1,6 @@
 {
   "name": "ng-network-health",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Angular network health checking module for offline-first apps",
   "main": "./bundles/angular-library-starter.umd.js",
   "module": "./modules/angular-library-starter.es5.js",
@@ -9,7 +9,7 @@
     "build": "node build.js",
     "test": "karma start",
     "pack-lib": "npm pack ./dist",
-    "publish-lib": "cp ./README.md ./dist && npm publish ./dist",
+    "publish-lib": "npm publish ./dist",
     "compodoc": "compodoc -p tsconfig.json",
     "compodoc-serve": "compodoc -s"
   },
