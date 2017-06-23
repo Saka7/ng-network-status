@@ -1,14 +1,16 @@
 # NG-NETWORK-HEALTH
 
-![ng-network-health](/mnt/data/wsp/js/ng-network-health/report/ng-network-service-logo.png)
+![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/report/ng-network-service-logo.png)
 
-NetworkHealthService helps you to add events when app is going on-line/off-line
+**ng-network-health** will help you to add events when app is going on-line/off-line.
 
 ## Examples
 
 ![ng-network-health](https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif)
 
 ## Usage
+
+> Take a look at the [example project](https://github.com/Saka7/ng-network-health/tree/master/examples/network-health-examples)
 
 ### Install package
 

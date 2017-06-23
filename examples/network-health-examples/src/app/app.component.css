@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 520px;
+  max-height: 520px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  background-color: #C3002F;
+  color: #fafafa;
+  border-radius: 3px;
+}
+
+h2 {
+  color: #212121;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
