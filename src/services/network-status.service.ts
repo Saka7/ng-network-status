@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 
 /**
-* NetworkHealthService helps you to add events when app is going on-line/off-line
+* NetworkStatusService helps you to add events when app is going on-line/off-line
 */
 @Injectable()
-export class NetworkHealthService {
+export class NetworkStatusService {
 
   private networkStatus: Observable<boolean>;
 

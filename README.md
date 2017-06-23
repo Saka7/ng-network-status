@@ -1,34 +1,34 @@
-![ng-network-health](https://raw.githubusercontent.com/Saka7/ng-network-health/master/logo.png)
+![ng-network-status](https://raw.githubusercontent.com/Saka7/ng-network-status/master/logo.png)
 
-# NG-NETWORK-HEALTH
-[![Code Climate](https://codeclimate.com/github/Saka7/ng-network-health/badges/gpa.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
-[![Issue Count](https://codeclimate.com/github/Saka7/ng-network-health/badges/issue_count.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
-
-
-[![NPM](https://nodei.co/npm/ng-network-health.png)](https://nodei.co/npm/ng-network-health/)
-[![NPM](https://nodei.co/npm-dl/ng-network-health.png?months=6)](https://nodei.co/npm/ng-network-health/)
+# NG-network-status
+[![Code Climate](https://codeclimate.com/github/Saka7/ng-network-status/badges/gpa.svg)](https://codeclimate.com/github/Saka7/ng-network-status)
+[![Issue Count](https://codeclimate.com/github/Saka7/ng-network-status/badges/issue_count.svg)](https://codeclimate.com/github/Saka7/ng-network-status)
 
 
-**ng-network-health** will help you to add events when app is going on-line/off-line.
+[![NPM](https://nodei.co/npm/ng-network-status.png)](https://nodei.co/npm/ng-network-status/)
+[![NPM](https://nodei.co/npm-dl/ng-network-status.png?months=6)](https://nodei.co/npm/ng-network-status/)
+
+
+**ng-network-status** will help you to add events when app is going on-line/off-line.
 
 ## Examples
 
-![ng-network-health](https://j.gifs.com/Wn3ln4.gif)
+![ng-network-status](https://j.gifs.com/Wn3ln4.gif)
 
 ## Usage
 
-> Take a look at the [example project](https://github.com/Saka7/ng-network-health/tree/master/examples/network-health-examples)
+> Take a look at the [example project](https://github.com/Saka7/ng-network-status/tree/master/examples/network-status-examples)
 
 ### Install package
 
-`npm install --save ng-network-health`
+`npm install --save ng-network-status`
 
-### Add NgNetworkHealthModule to your AppModule
+### Add NgNetworkStatusModule to your AppModule
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgNetworkHealthModule } from 'ng-network-health'; // <-- HERE
+import { NgNetworkStatusModule } from 'ng-network-status'; // <-- HERE
 
 import { AppComponent } from './app.component';
 
@@ -38,7 +38,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgNetworkHealthModule // <-- and HERE
+    NgNetworkStatusModule // <-- and HERE
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -46,31 +46,31 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-### Use NetworkHealthService in your components
+### Use NetworkStatusService in your components
 ```javascript
 import { Component, OnInit } from '@angular/core';
 
-// Import NetworkHealthService
-import { NetworkHealthService } from 'ng-network-health';
+// Import NetworkStatusService
+import { NetworkStatusService } from 'ng-network-status';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ NetworkHealthService ]
+  providers: [ NetworkStatusService ]
 })
 export class AppComponent implements OnInit {
 
   networkStatus = "Online";
 
-  // Inject NetworkHealthService instance
-  constructor(private networkHealthService: NetworkHealthService) {}
+  // Inject NetworkStatusService instance
+  constructor(private networkStatusService: NetworkStatusService) {}
 
   ngOnInit() {
     // Register health check
-    this.networkHealthService.healthCheck();
+    this.networkStatusService.healthCheck();
     // Subscribe on network status change event
-    this.networkHealthService.isOnline.subscribe(isOnline => {
+    this.networkStatusService.isOnline.subscribe(isOnline => {
       this.networkStatus = isOnline ? "Online" : "Offline";
     });
   }
@@ -86,7 +86,7 @@ public healthCheck(interval: number, options: Options);
 
 You can configure interval and grayscale effect options.
 ```javascript
-this.networkHealthService.healthCheck(500, {
+this.networkStatusService.healthCheck(500, {
   grayscale: {
     enabled: false
   }
@@ -106,4 +106,4 @@ defaultOptions = {
 ```
 
 ## License
-ng-network-health is released under the [MIT License](https://opensource.org/licenses/MIT).
+ng-network-status is released under the [MIT License](https://opensource.org/licenses/MIT).

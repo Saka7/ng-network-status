@@ -8,11 +8,11 @@ const globals = {
 };
 
 export default {
-    entry: './dist/modules/angular-library-starter.es5.js',
-    dest: './dist/bundles/angular-library-starter.umd.js',
+    entry: './dist/modules/ng-network-status.es5.js',
+    dest: './dist/bundles/ng-network-status.umd.js',
     format: 'umd',
     exports: 'named',
-    moduleName: 'ng.angularLibraryStarter',
+    moduleName: 'ng.NgNetworkStatus',
     plugins: [resolve()],
     external: Object.keys(globals),
     globals: globals,

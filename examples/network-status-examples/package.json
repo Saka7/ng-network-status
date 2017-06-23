@@ -1,6 +1,6 @@
 {
-  "name": "network-health-examples",
-  "version": "0.0.0",
+  "name": "network-status-examples",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
-    "ng-network-health": "^0.1.1",
+    "ng-network-status": "^0.2.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },

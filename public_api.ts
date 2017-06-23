@@ -1,4 +1,4 @@
 /**
  * Entry point for all public APIs of the package.
  */
-export * from './src/ng-network-health';
+export * from './src/ng-network-status';

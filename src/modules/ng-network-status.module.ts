@@ -1,20 +1,20 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-import { NetworkHealthService } from '../services/network-health.service';
+import { NetworkStatusService } from '../services/network-status.service';
 
 @NgModule({
     declarations: [],
     exports: []
 })
-export class NgNetworkHealthModule {
+export class NgNetworkStatusModule {
 
     /**
      * Use in AppModule: new instance of Ne
      */
     public static forRoot(): ModuleWithProviders {
         return {
-            ngModule: NgNetworkHealthModule,
-            providers: [NetworkHealthService]
+            ngModule: NgNetworkStatusModule,
+            providers: [NetworkStatusService]
         };
     }
 
@@ -23,8 +23,8 @@ export class NgNetworkHealthModule {
      */
     public static forChild(): ModuleWithProviders {
         return {
-            ngModule: NgNetworkHealthModule,
-            providers: [NetworkHealthService]
+            ngModule: NgNetworkStatusModule,
+            providers: [NetworkStatusService]
         };
     }
 

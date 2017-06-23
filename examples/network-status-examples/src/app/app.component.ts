@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NetworkHealthService } from 'ng-network-health';
+import { NetworkStatusService } from 'ng-network-status';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ NetworkHealthService ]
+  providers: [ NetworkStatusService ]
 })
 export class AppComponent implements OnInit {
 
   networkStatus = "Online";
 
-  constructor(private networkHealthService: NetworkHealthService) {}
+  constructor(private networkStatusService: NetworkStatusService) {}
 
   ngOnInit() {
-    this.networkHealthService.healthCheck();
-    this.networkHealthService.isOnline.subscribe(isOnline => {
+    this.networkStatusService.healthCheck();
+    this.networkStatusService.isOnline.subscribe(isOnline => {
       this.networkStatus = isOnline ? "Online" : "Offline";
     });
   }
