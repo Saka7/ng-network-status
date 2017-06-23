@@ -1,10 +1,12 @@
 # NG-NETWORK-HEALTH
 
-![ng-network-health]()
+![ng-network-health](/mnt/data/wsp/js/ng-network-health/report/ng-network-service-logo.png)
 
 NetworkHealthService helps you to add events when app is going on-line/off-line
 
 ## Examples
+
+![ng-network-health](https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif)
 
 ## Usage
 
