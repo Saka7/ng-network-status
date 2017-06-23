@@ -2,7 +2,8 @@
 [![Code Climate](https://codeclimate.com/github/Saka7/ng-network-health/badges/gpa.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 [![Issue Count](https://codeclimate.com/github/Saka7/ng-network-health/badges/issue_count.svg)](https://codeclimate.com/github/Saka7/ng-network-health)
 
-![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/report/ng-network-service-logo.png)
+
+![ng-network-health](https://github.com/Saka7/ng-network-health/blob/master/logo.png)
 
 **ng-network-health** will help you to add events when app is going on-line/off-line.
 
