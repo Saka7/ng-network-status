@@ -1,6 +1,6 @@
 {
     "name": "ng-network-health",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Angular network health checking module for offline-first apps",
     "main": "./bundles/angular-library-starter.umd.js",
     "module": "./modules/angular-library-starter.es5.js",
@@ -14,15 +14,15 @@
         "compodoc-serve": "compodoc -s"
     },
     "typings": "./index.d.ts",
-    "author": "",
+    "author": "Saka7",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/Saka7/ng-network-health"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/Saka7/ng-network-health/issues"
     },
-    "homepage": "",
+    "homepage": "https://github.com/Saka7/ng-network-health",
     "keywords": [
         "angular",
         "javascript",
