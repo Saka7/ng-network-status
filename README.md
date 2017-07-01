@@ -9,11 +9,15 @@
 [![NPM](https://nodei.co/npm-dl/ng-network-status.png?months=6)](https://nodei.co/npm/ng-network-status/)
 
 
-**ng-network-status** will help you to add events when app is going on-line/off-line.
+**ng-network-status** will help you to add events when app is going online/offline.
 
 ## Examples
 
-![ng-network-status](https://j.gifs.com/Wn3ln4.gif)
+![ng-network-status-debian](https://j.gifs.com/j2oAoy.gif)
+
+-----
+
+<img src="https://j.gifs.com/JZvE0K.gif" alt="ng-network-status-android" width="380px"/>
 
 ## Usage
 
