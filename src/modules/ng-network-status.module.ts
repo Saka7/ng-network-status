@@ -8,9 +8,6 @@ import { NetworkStatusService } from '../services/network-status.service';
 })
 export class NgNetworkStatusModule {
 
-    /**
-     * Use in AppModule: new instance of Ne
-     */
     public static forRoot(): ModuleWithProviders {
         return {
             ngModule: NgNetworkStatusModule,
@@ -18,9 +15,6 @@ export class NgNetworkStatusModule {
         };
     }
 
-    /**
-     * Use in features modules with lazy loading: new instance of SumService.
-     */
     public static forChild(): ModuleWithProviders {
         return {
             ngModule: NgNetworkStatusModule,
